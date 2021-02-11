@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Article.css';
 
 const Article = ({ title, url, image }) => (
-  <a href={url}>
+  <a className={styles.Article} href={url}>
     <figure>
       <img src={image} alt={title} />
       <figcaption>{title}</figcaption>
