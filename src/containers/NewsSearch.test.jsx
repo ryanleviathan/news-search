@@ -2,7 +2,7 @@ import React from 'react';
 import { screen, render, fireEvent, waitFor } from '@testing-library/react';
 import NewsSearch from './NewsSearch';
 
-describe(() => {
+describe('NewsSearch tests', () => {
   it('searches for articles when a search term is typed', () => {
     render(<NewsSearch />);
 
@@ -14,7 +14,7 @@ describe(() => {
     });
 
     return waitFor(() => {
-      expect(screen.getByTestId('artciles')).not.toBeEmptyDOMElement();
+      expect(screen.getByTestId('articles')).not.toBeEmptyDOMElement();
     });
   });
 });
