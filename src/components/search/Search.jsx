@@ -12,7 +12,7 @@ const Search = ({ search, onChange }) => (
   />
 );
 
-Search.PropTypes = {
+Search.propTypes = {
   search: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired
 };
